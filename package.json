@@ -1,0 +1,42 @@
+{
+  "name": "measure-text-width",
+  "version": "0.0.1",
+  "description": "Measure text width with canvas",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Dmitriy Semyushkin <git@devg.ru> (https://devg.ru)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-jest": "18",
+    "babel-loader": "6",
+    "babel-preset-es2015": "6",
+    "babel-preset-stage-3": "6",
+    "canvas": "^1.6.7",
+    "jest": "18",
+    "webpack": "2"
+  },
+  "scripts": {
+    "build": "webpack -p",
+    "test": "jest --watchAll",
+    "prepublish": "yarn build"
+  },
+  "dependencies": {},
+  "jest": {
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>[/\\\\](build|docs|node_modules|scripts)[/\\\\]"
+    ],
+    "testEnvironment": "jsdom",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-3"
+    ]
+  }
+}
