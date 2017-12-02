@@ -2,7 +2,7 @@
   "name": "measure-text-width",
   "version": "0.0.1",
   "description": "Measure text width with canvas",
-  "main": "index.js",
+  "main": "dist.js",
   "keywords": [],
   "author": "Dmitriy Semyushkin <git@devg.ru> (https://devg.ru)",
   "license": "MIT",
@@ -21,6 +21,9 @@
     "prepublish": "yarn build"
   },
   "dependencies": {},
+  "files": [
+    "dist.js"
+  ],
   "jest": {
     "collectCoverageFrom": [
       "lib/**/*.js"
