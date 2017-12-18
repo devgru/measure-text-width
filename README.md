@@ -40,6 +40,10 @@ Measures and returns width of *text* in pixels, rounded to integer.
 
 Sets font for canvas, as in [CSS spec](https://developer.mozilla.org/en-US/docs/Web/CSS/font).
 
+## widthMeasurer.useElementFont(*element*)
+
+Sets font for canvas, extracting passed Element's font via [getComputedStyle](https://developer.mozilla.org/ru/docs/Web/API/Window/getComputedStyle).
+
 ## License
 
 MIT © [Dmitriy Semyushkin](https://devg.ru)
